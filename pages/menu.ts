@@ -2,11 +2,15 @@ import { Page, Locator} from '@playwright/test';
 
 export class MenuPage{
 
+    private readonly page: Page;
+
     private readonly chooseLocationLink : Locator;
     private readonly orderNowBtn : Locator;
 
-    constructor(public page: Page){
+    constructor(page: Page){
        this.page = page;
+       this.chooseLocationLink = this.page.getByRole('link', { name: 'Choose a location to order' }).describe("Choose location link")
+       this.orderNowBtn = this.page.getByRole('banner').getByRole('link', { name: 'Order Now' })
     }
 
     async gotoMenuPage() {
@@ -14,11 +18,11 @@ export class MenuPage{
     }
 
     async clickChooseLocation(){
-        await this.page.getByRole('link', { name: 'Choose a location to order' }).click();
+        this.chooseLocationLink.click();
     }
 
     async clickOrderNow(){
-        await this.page.getByRole('banner').getByRole('link', { name: 'Order Now' }).click();
+        this.orderNowBtn.click();
     }
 
     async clickMenuOption(menuItem:string){

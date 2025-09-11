@@ -1,10 +1,15 @@
-import { Page } from '@playwright/test';
+import { Page, Locator} from '@playwright/test';
 
 export class LocationsPage{
 
+    private readonly page: Page;
+    private readonly searchLocBox: Locator;
+    private readonly searchLocBtn: Locator;
     
-    constructor(public page: Page){
+    constructor(page: Page){
        this.page = page;
+       this.searchLocBox = this.page.getByRole('combobox', { name: 'Search' }).describe("Search box for location")
+       this.searchLocBtn = this.page.locator('button').filter({ hasText: 'Search' }).describe("Button for searching location")
     }
 
     async gotoLocationsPage() {
@@ -17,10 +22,10 @@ export class LocationsPage{
     }
 
     async searchLocation(zipcode: string){
-        await this.page.getByRole('combobox', { name: 'Search' }).click();
-        await this.page.getByRole('combobox', { name: 'Search' }).fill(zipcode);
+        this.searchLocBox.click();
+        this.searchLocBox.fill(zipcode);
         await this.page.getByRole('option', { name: 'Search for “'+zipcode+'”' }).click();
-        await this.page.locator('button').filter({ hasText: 'Search' }).click();
+        this.searchLocBtn.click();
     }
 
     async chooseFirstLocation(){

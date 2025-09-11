@@ -5,6 +5,7 @@ import { Burger } from '../pages/create-your-own';
 
 export class CartPage{
 
+    private readonly page: Page;
     private readonly inputQty: Locator;
     private readonly cartHeading: Locator;
     private readonly createYourOwnItem: Locator;
@@ -13,7 +14,7 @@ export class CartPage{
     private readonly totals: Locator;
     private readonly cartImages: Locator;
     
-    constructor(public page: Page){
+    constructor(page: Page){
        this.page = page;
        this.inputQty = page.getByRole('spinbutton');
        this.cartHeading = page.getByRole('heading', { name: 'Cart' }).describe('Cart heading');

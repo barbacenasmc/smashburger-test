@@ -2,7 +2,7 @@ import {expect, Page, Locator, FrameLocator } from '@playwright/test';
 import { Burger } from '../pages/create-your-own';
 
 export class CheckoutPage{
-
+    private readonly page: Page;
         // Headings and summary
     private readonly checkoutHeading: Locator;
     private readonly pickupFromHeading: Locator;
@@ -34,7 +34,7 @@ export class CheckoutPage{
     private readonly placeOrderButton: Locator;
 
     
-    constructor(public page: Page){
+    constructor(page: Page){
        this.page = page;
         // Headings and summary
         this.checkoutHeading = page.getByRole('heading', { name: 'Checkout' }).describe('Checkout heading');
