@@ -1,0 +1,117 @@
+[
+{
+    "zipcode": "80246",
+    "burgerOptions": {
+      "size": "Single Beef",
+      "bun": "Classic",
+      "cheese": "American",
+      "toppings": ["Leaf Lettuce", "Tomatoes"],
+      "sauces": ["Smash Sauce®"],
+      "quantity": 1
+    },
+    "customerInfo": {
+      "firstName": "Juan",
+      "lastName": "Dela Cruz",
+      "email": "jdelacruz@yopmail.com",
+      "phone": "555-123-4567",
+      "password": "Password123!"
+    },
+    "cardInfo": {
+      "number": "4567 7199 9039 1700",
+      "expiry": "07/29",
+      "cvv": "711"
+    }
+  },
+  {
+    "zipcode": "80246",
+    "burgerOptions": {
+      "size": "Double Beef",
+      "bun": "Spicy Chipotle",
+      "cheese": "American",
+      "toppings": ["Grilled Red Onion", "Pickles"],
+      "sauces": ["Ketchup", "Mustard"],
+      "quantity": 1
+    },
+    "customerInfo": {
+      "firstName": "Kenneth",
+      "lastName": "Santos",
+      "email": "ksantos@yopmail.com",
+      "phone": "555-123-4567",
+      "password": "Password123!"
+    },
+    "cardInfo": {
+      "number": "4567 7199 9039 1700",
+      "expiry": "07/29",
+      "cvv": "711"
+    }
+  },
+   {
+    "zipcode": "80246",
+    "burgerOptions": {
+      "size": "Black Bean",
+      "bun": "Udi's® Gluten Free Bun",
+      "cheese": "Aged Swiss",
+      "extraCheese": ["Aged Swiss"],
+      "sauces": ["Truffle Mayo"],
+      "quantity": 1
+    },
+    "customerInfo": {
+      "firstName": "Maria",
+      "lastName": "Clara",
+      "email": "mclara@yopmail.com",
+      "phone": "555-123-4567",
+      "password": "Password123!"
+    },
+    "cardInfo": {
+      "number": "4567 7199 9039 1700",
+      "expiry": "07/29",
+      "cvv": "711"
+    }
+  },
+  {
+    "zipcode": "80246",
+    "burgerOptions": {
+      "size": "Crispy Chicken",
+      "bun": "Classic",
+      "cheese": "Pepper Jack",
+      "extraCheese":["Pepper Jack"],
+      "addOns": ["Applewood Smoked Bacon"],
+      "quantity": 1
+    },
+    "customerInfo": {
+      "firstName": "Michael",
+      "lastName": "De Guzman",
+      "email": "mdeguzman@yopmail.com",
+      "phone": "555-123-4567",
+      "password": "Password123!"
+    },
+    "cardInfo": {
+      "number": "4567 7199 9039 1700",
+      "expiry": "07/29",
+      "cvv": "711"
+    }
+  },
+  {
+    "zipcode": "80246",
+    "burgerOptions": {
+      "size": "Single Chicken Smash®",
+      "bun": "No Bun",
+      "cheese": "No Cheese",
+      "toppings": ["Grilled Mushrooms"],
+      "sauces": ["Chipotle Ranch"],
+      "quantity": 1
+    },
+    "customerInfo": {
+      "firstName": "Anna",
+      "lastName": "Ramos",
+      "email": "aramos@yopmail.com",
+      "phone": "555-123-4567",
+      "password": "Password123!"
+    },
+    "cardInfo": {
+      "number": "4567 7199 9039 1700",
+      "expiry": "07/29",
+      "cvv": "711"
+    }
+  }
+]
