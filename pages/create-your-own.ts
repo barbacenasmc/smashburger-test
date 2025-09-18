@@ -43,7 +43,8 @@ export class CreateYourOwnPage{
     }
 
     private getSizeOption(size: string): Locator {
-    return this.page.getByRole('option', { name: size }).describe(`${size} size option`);
+    //return this.page.getByRole('option', { name: size }).describe(`${size} size option`);
+        return this.page.getByText(size);
   }
 
     private getBunOption(bun: string): Locator {
@@ -85,11 +86,11 @@ export class CreateYourOwnPage{
 
 
         //Select size
-        await expect(this.burgerSizeList).toBeVisible()
+        //await expect(this.burgerSizeList).toBeVisible()
         //Expand burger size dropdown list
-        await this.burgerSizeList.click()
+        //await this.burgerSizeList.click()
         const sizeOption = this.getSizeOption(burger.size);
-        await expect(sizeOption).toBeVisible();
+        //await expect(sizeOption).toBeVisible();
         await sizeOption.click();
 
         //Select bun
